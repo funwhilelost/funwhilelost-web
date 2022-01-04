@@ -1,0 +1,29 @@
+{
+  "name": "tidvl-club",
+  "version": "0.0.69",
+  "description": "tidvl.club static website",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "npx @11ty/eleventy --serve --watch",
+    "build": "NODE_ENV=production npx @11ty/eleventy",
+    "serve": "npx @11ty/eleventy --serve",
+    "test": "npx @11ty/eleventy --dryrun"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/funwhilelost/tidvl-club.git"
+  },
+  "author": "Tidvl",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/funwhilelost/tidvl-club/issues"
+  },
+  "homepage": "https://github.com/funwhilelost/tidvl-club#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1"
+  },
+  "dependencies": {
+    "eleventy-plugin-seo": "^0.5.2",
+    "luxon": "^2.1.1"
+  }
+}
