@@ -11,19 +11,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/funwhilelost/tidvl-club.git"
+    "url": "git+https://github.com/funwhilelost/funwhilelost-web.git"
   },
-  "author": "Tidvl",
+  "author": "funwhilelost",
   "license": "UNLICENSED",
   "bugs": {
-    "url": "https://github.com/funwhilelost/tidvl-club/issues"
+    "url": "https://github.com/funwhilelost/funwhilelost-web/issues"
   },
-  "homepage": "https://github.com/funwhilelost/tidvl-club#readme",
+  "homepage": "https://github.com/funwhilelost/funwhilelost-web#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^0.12.1"
+    "@11ty/eleventy": "^3"
   },
   "dependencies": {
-    "eleventy-plugin-seo": "^0.5.2",
-    "luxon": "^2.1.1"
+    "eleventy-plugin-seo": "^0.5.2"
   }
 }

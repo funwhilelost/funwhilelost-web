@@ -1,0 +1,19 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Yarn Dev",
+      "skipFiles": ["<node_internals>/**"],
+      "runtimeExecutable": "yarn",
+      "windows": {
+        "runtimeExecutable": "yarn.cmd"
+      },
+      "runtimeArgs": ["dev"],
+      "env": {
+        "PORT": "8080"
+      }
+    }
+  ]
+}
