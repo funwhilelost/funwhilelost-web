@@ -20,7 +20,9 @@
   },
   "homepage": "https://github.com/funwhilelost/funwhilelost-web#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^3"
+    "@11ty/eleventy": "^3",
+    "@11ty/eleventy-plugin-rss": "^2.0.2",
+    "lodash.escape": "^4.0.1"
   },
   "dependencies": {
     "eleventy-plugin-seo": "^0.5.2"

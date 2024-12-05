@@ -1,0 +1,52 @@
+---json
+{
+  "permalink": "feed.xml",
+  "eleventyExcludeFromCollections": true,
+  "metadata": {
+    "title": "funwhilelost.com dispatches",
+    "subtitle": "...",
+    "language": "en",
+    "url": "https://funwhilelost.com/",
+    "author": {
+      "name": "funwhilelost",
+      "email": "andy@funwhilelost.com"
+    }
+  },
+  "sitemap": {
+    "exclude": true
+  }
+}
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:base="{{ metadata.url }}">
+  <!-- 
+  
+  Hello! This file is designed for a computer to read.
+  It might look a little scary but it's really just a 
+  list of links to posts on funwhilelost.com.  You can copy
+  and paste the URL in the address bar (or tap "Share"
+  on your mobile browser) and paste it into your 
+  favorite feed reader software. <3
+  
+  -->
+  <title>{{ metadata.title }}</title>
+  <subtitle>{{ metadata.subtitle }}</subtitle>
+  <link href="{{ permalink | absoluteUrl(metadata.url) }}" rel="self"/>
+  <link href="{{ metadata.url }}"/>
+  <updated>{{ collections.posts | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
+  <id>{{ metadata.url }}</id>
+  <author>
+    <name>{{ metadata.author.name }}</name>
+    <email>{{ metadata.author.email }}</email>
+  </author>
+  {%- for post in collections.posts | reverse %}
+  {%- set absolutePostUrl = post.url | absoluteUrl(metadata.url) %}
+  <entry>
+    <title>{{ post.data.title }}</title>
+    <link href="{{ absolutePostUrl }}"/>
+    <updated>{{ post.date | dateToRfc3339 }}</updated>
+    <id>{{ absolutePostUrl }}</id>
+    <content xml:lang="{{ metadata.language }}" type="html">{{ post.content | renderTransforms(post.data.page, metadata.base) }}</content>
+  </entry>
+  {%- endfor %}
+</feed>
