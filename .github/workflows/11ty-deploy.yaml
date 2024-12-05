@@ -20,7 +20,7 @@ jobs:
         env:
           NODE_ENV: "production"
       - name: Deploy to Dreamhost
-        uses: AEnterprise/rsync-deploy@v1.0
+        uses: AEnterprise/rsync-deploy@v1.0.2
         env:
           DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
           ARGS: "-e -c -r --delete"
