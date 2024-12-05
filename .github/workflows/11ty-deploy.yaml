@@ -7,11 +7,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
+
       - name: Set Node.js
-        uses: actions/setup-node@master
+        uses: actions/setup-node@v4
         with:
-          node-version: 14.x
+          node-version: 22.x
 
       - name: Install dependencies
         run: npm install
@@ -19,13 +20,21 @@ jobs:
         run: npm run build
         env:
           NODE_ENV: "production"
-      - name: Deploy to Dreamhost
-        uses: AEnterprise/rsync-deploy@v1.0.2
-        env:
-          DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
-          ARGS: "-e -c -r --delete"
-          SERVER_PORT: 22
-          FOLDER: "build/"
-          SERVER_IP: alsea.dreamhost.com
-          USERNAME: funwhilelost
-          SERVER_DESTINATION: /home/funwhilelost/funwhilelost.com
+
+      # - name: Deploy to Dreamhost
+      #   uses: AEnterprise/rsync-deploy@v1.0.2
+      #   env:
+      #     DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
+      #     ARGS: "-e -c -r --delete"
+      #     SERVER_PORT: 22
+      #     FOLDER: "build/"
+      #     SERVER_IP: alsea.dreamhost.com
+      #     USERNAME: funwhilelost
+      #     SERVER_DESTINATION: /home/funwhilelost/funwhilelost.com
+
+      - name: Deploy with rsync
+        shell: bash
+        run: |
+          install -m 600 -D /dev/null ~/.ssh/id_rsa
+          echo "${{ secrets.DEPLOY_KEY }}" > ~/.ssh/id_rsa
+          rsync -rav -e "ssh -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa" --delete build/ funwhilelost@pdx1-shared-a1-06.dreamhost.com:/home/funwhilelost/funwhilelost.com
