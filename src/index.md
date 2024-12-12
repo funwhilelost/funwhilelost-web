@@ -6,5 +6,4 @@ layout: layouts/home.njk
 
 My web garden about adventuring.
 
-### Posts
-
+## Posts
