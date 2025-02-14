@@ -65,6 +65,7 @@ gaia- Schweitzer
 
 - Echo Ridge
 - Wenatchee State Park
+- Leavenworth (golf course, creekside, ski hill)
 
 ### Methow Area
 
