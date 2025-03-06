@@ -1,0 +1,11 @@
+{
+  "blogs": [
+    {
+      "authorName": "Example Author",
+      "authorWiki": "https://en.wikipedia.org/wiki/Example_Author",
+      "blogTitle": "Example Blog",
+      "blogUrl": "https://example.com",
+      "feedUrl": "https://example.com/feed.xml"
+    }
+  ]
+}

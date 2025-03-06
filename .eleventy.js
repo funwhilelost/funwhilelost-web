@@ -72,6 +72,12 @@ module.exports = function(eleventyConfig) {
     return coll;
   });
 
+  // Add blogroll collection
+  eleventyConfig.addCollection("blogroll", function(collection) {
+    const blogroll = require("./src/_data/blogroll.json");
+    return blogroll.blogs;
+  });
+
   return {
     dir: {
       input: "src",
