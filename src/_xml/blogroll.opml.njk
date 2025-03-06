@@ -1,0 +1,46 @@
+---json
+{
+  "permalink": "blogs.opml.xml",
+  "eleventyExcludeFromCollections": true,
+  "metadata": {
+    "title": "funwhilelost.com blogroll",
+    "subtitle": "...",
+    "language": "en",
+    "url": "https://funwhilelost.com/blogroll",
+    "author": {
+      "name": "funwhilelost",
+      "email": "andy@funwhilelost.com"
+    }
+  },
+  "sitemap": {
+    "exclude": true
+  }
+}
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="1.0">
+  <!-- 
+  
+  Hello! This file is designed for a computer to read.
+  It might look a little scary but it's really just a 
+  list of links to blogs that I like.  You can copy
+  and paste the URL in the address bar (or tap "Share"
+  on your mobile browser) and paste it into your 
+  favorite feed reader software. <3
+  
+  -->
+  <head>
+    <title>Blog feed for funwhilelost's blogroll</title>
+    <dateCreated>FIXME</dateCreated>
+  </head>
+
+  <body>
+    <outline text="Blogs" title="Blogs">
+      {%- for feed in collections.blogroll %}
+        <outline text="{{ feed.blogTitle }}" title="{{ feed.blogTitle }}"
+          type="rss" xmlUrl="{{ feed.feedUrl }}" htmlUrl="{{ feed.blogUrl }}" />
+      {%- endfor %}
+    </outline>
+  </body>
+</opml>
+
