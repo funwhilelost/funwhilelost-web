@@ -16,11 +16,17 @@ These are bits of technology I use.  Inspired by [uses.tech](https://uses.tech/)
 - RaspberryPi Homelab Cluster (Talos)
 - Intel NUC Homelab VM Server (Ubuntu)
 
-### Productivity
+### Laptop Productivity
 
 - Notion (Zettelkasten system)
 - Raycast
 - Warp terminal
+- Klack (Mechanical keyboard sounds)
+- Kap (Screen capture written in Tauri)
+- Cascable (Canon camera as webcam)
+
+### Self Hosted
+
 - Nextcloud
 - HomeAssistant
 - TinyTinyRSS
