@@ -1,393 +1,233 @@
 {
   "blogs": [
     {
-      "blogTitle": "@WDFW Medium Blog",
-      "blogUrl": "https://wdfw.medium.com/",
-      "feedUrl": "https://medium.com/feed/@wdfw",
-      "category": "Adventure"
-    },
-    {
-      "blogTitle": "Adventure and Challenge",
       "blogUrl": "https://challengeandadventure.com",
       "feedUrl": "http://challengeandadventure.com/feed",
-      "category": "Adventure"
+      "category": "Sailing",
+      "blogTitle": "Adventure and Challenge",
+      "authorFullName": null,
+      "wikipediaUrl": null
     },
     {
-      "blogTitle": "American Windsurfer",
-      "blogUrl": "https://www.americanwindsurfer.com",
-      "feedUrl": "https://www.americanwindsurfer.com/feed/",
-      "category": "Adventure"
-    },
-    {
-      "blogTitle": "Bearings: The Blog of The Center for Wooden Boats",
-      "blogUrl": "https://cwbblog.wordpress.com",
-      "feedUrl": "http://cwbblog.wordpress.com/feed/",
-      "category": "Adventure"
-    },
-    {
-      "blogTitle": "Catch Surf ® | Blog",
-      "blogUrl": "https://catchsurf.com/blogs/catch-surf-blog",
-      "feedUrl": "https://catchsurf.com/blogs/catch-surf-blog.atom",
-      "category": "Adventure"
-    },
-    {
-      "blogTitle": "David Moskowitz Photography",
-      "blogUrl": "http://davidmoskowitz.blogspot.com/",
-      "feedUrl": "http://davidmoskowitz.blogspot.com/feeds/posts/default",
-      "category": "Adventure"
-    },
-    {
-      "blogTitle": "Fat of the Land",
-      "blogUrl": "http://fat-of-the-land.blogspot.com/",
-      "feedUrl": "http://fat-of-the-land.blogspot.com/feeds/posts/default",
-      "category": "Adventure"
-    },
-    {
-      "blogTitle": "GaijinPot",
-      "blogUrl": "https://blog.gaijinpot.com",
-      "feedUrl": "https://blog.gaijinpot.com/feed",
-      "category": "Adventure"
-    },
-    {
-      "blogTitle": "Hokule'a Blog",
       "blogUrl": "http://www.hokulea.com",
       "feedUrl": "http://www.hokulea.com/feed/",
-      "category": "Adventure"
+      "category": "Sailing",
+      "blogTitle": "Hokule'a Blog",
+      "authorFullName": null,
+      "wikipediaUrl": null
     },
     {
-      "blogTitle": "IWT feed",
-      "blogUrl": "https://internationalwindsurfingtour.com",
-      "feedUrl": "https://internationalwindsurfingtour.com/feed/",
-      "category": "Adventure"
-    },
-    {
-      "blogTitle": "Kongsberger Ski Club",
       "blogUrl": "https://kongsberger.blogspot.com/",
       "feedUrl": "https://kongsberger.blogspot.com/feeds/posts/default",
-      "category": "Adventure"
+      "category": "Skiing",
+      "blogTitle": "Kongsberger Ski Club",
+      "authorFullName": null,
+      "wikipediaUrl": null
     },
     {
-      "blogTitle": "Mental Flowers",
       "blogUrl": "https://mental-flowers.com",
-      "feedUrl": "http://mentalflowers.wordpress.com/feed/",
-      "category": "Adventure"
+      "feedUrl": "https://mental-flowers.com/feed/",
+      "category": "Writing",
+      "blogTitle": "Mental Flowers",
+      "authorFullName": null,
+      "wikipediaUrl": null
     },
     {
-      "blogTitle": "NOLS Blog",
-      "blogUrl": "https://blog.nols.edu",
-      "feedUrl": "https://blog.nols.edu/rss.xml",
-      "category": "Adventure"
-    },
-    {
-      "blogTitle": "PNWORCA Classifieds",
-      "blogUrl": "https://pnworca.org/forums/forum/for-sale/feed/",
-      "feedUrl": "https://pnworca.org/forums/forum/for-sale/feed/",
-      "category": "Adventure"
-    },
-    {
-      "blogTitle": "PWA feed",
-      "blogUrl": "http://www.pwaworldtour.com",
-      "feedUrl": "https://www.pwaworldtour.com/index.php?id=2035",
-      "category": "Adventure"
-    },
-    {
-      "blogTitle": "R2AK Feed",
       "blogUrl": "https://r2ak.com",
       "feedUrl": "https://r2ak.com/feed/",
-      "category": "Adventure"
+      "category": "Sailing",
+      "blogTitle": "R2AK Feed",
+      "authorFullName": null,
+      "wikipediaUrl": null
     },
     {
-      "blogTitle": "REI",
-      "blogUrl": "https://www.rei.com/blog",
-      "feedUrl": "https://www.rei.com/blog/feed",
-      "category": "Adventure"
-    },
-    {
-      "blogTitle": "Rob Casey Photographer",
       "blogUrl": "http://robcaseyphotographer.blogspot.com/",
       "feedUrl": "http://robcaseyphotographer.blogspot.com/feeds/posts/default",
-      "category": "Adventure"
+      "category": "Art",
+      "blogTitle": "Rob Casey Photographer",
+      "authorFullName": "Rob Casey",
+      "wikipediaUrl": null
     },
     {
-      "blogTitle": "Sailing Auklet",
       "blogUrl": "https://sailingauklet.com",
       "feedUrl": "https://sailingauklet.com/feed/",
-      "category": "Adventure"
+      "category": "Sailing",
+      "blogTitle": "Sailing Auklet",
+      "authorFullName": null,
+      "wikipediaUrl": null
     },
     {
-      "blogTitle": "Seattle Rando Blog",
       "blogUrl": "http://blog.seattlerando.org",
       "feedUrl": "http://blog.seattlerando.org/?feed=rss2",
-      "category": "Adventure"
+      "category": "Cycling",
+      "blogTitle": "Seattle Rando Blog",
+      "authorFullName": null,
+      "wikipediaUrl": null
     },
     {
-      "blogTitle": "Sound Rowers & Paddlers",
       "blogUrl": "http://soundrowers.org/",
-      "feedUrl": "http://soundrowers.org/wp/feed/",
-      "category": "Adventure"
+      "feedUrl": "https://www.soundrowers.org/feed/",
+      "category": "Rowing",
+      "blogTitle": "Sound Rowers & Paddlers",
+      "authorFullName": null,
+      "wikipediaUrl": null
     },
     {
-      "blogTitle": "Souther Cross Sailing",
-      "blogUrl": "http://thepocketyacht.blogspot.com/",
-      "feedUrl": "http://thepocketyacht.blogspot.com/feeds/posts/default",
-      "category": "Adventure"
-    },
-    {
-      "blogTitle": "Stand Up Paddle the World",
       "blogUrl": "https://standuppaddletheworld.com",
       "feedUrl": "https://standuppaddletheworld.com/feed/",
-      "category": "Adventure"
+      "category": "Paddling",
+      "blogTitle": "Stand Up Paddle the World",
+      "authorFullName": null,
+      "wikipediaUrl": null
     },
     {
-      "blogTitle": "Tahoe Trail Guide",
       "blogUrl": "https://tahoetrailguide.com/",
       "feedUrl": "https://tahoetrailguide.com/feed/",
-      "category": "Adventure"
+      "category": "Skiing",
+      "blogTitle": "Tahoe Trail Guide",
+      "authorFullName": null,
+      "wikipediaUrl": null
     },
     {
-      "blogTitle": "The Adventure Blog",
-      "blogUrl": "https://adventureblog.net",
-      "feedUrl": "http://theadventureblog.blogspot.com/feeds/posts/default",
-      "category": "Adventure"
-    },
-    {
-      "blogTitle": "The Art of Manliness",
-      "blogUrl": "https://www.artofmanliness.com",
-      "feedUrl": "http://feeds2.feedburner.com/TheArtOfManliness",
-      "category": "Adventure"
-    },
-    {
-      "blogTitle": "The Elwha Project",
-      "blogUrl": "http://elwhaproject.blogspot.com/",
-      "feedUrl": "http://elwhaproject.blogspot.com/feeds/posts/default",
-      "category": "Adventure"
-    },
-    {
-      "blogTitle": "The Tell Tale",
-      "blogUrl": "http://wyctelltale.blogspot.com/",
-      "feedUrl": "http://wyctelltale.blogspot.com/feeds/posts/default",
-      "category": "Adventure"
-    },
-    {
-      "blogTitle": "The Wolf College",
       "blogUrl": "https://www.wolfcollege.com",
       "feedUrl": "http://www.wolfcollege.com/feed/",
-      "category": "Adventure"
+      "category": "Education",
+      "blogTitle": "The Wolf College",
+      "authorFullName": null,
+      "wikipediaUrl": null
     },
     {
-      "blogTitle": "Tinygogo",
-      "blogUrl": "http://tinygogo.blogspot.com/",
-      "feedUrl": "http://tinygogo.blogspot.com/feeds/posts/default",
-      "category": "Adventure"
-    },
-    {
-      "blogTitle": "Ultrapedestrian",
       "blogUrl": "http://www.ultrapedestrian.com",
       "feedUrl": "http://www.ultrapedestrian.com/feed/",
-      "category": "Adventure"
+      "category": "Running",
+      "blogTitle": "Ultrapedestrian",
+      "authorFullName": null,
+      "wikipediaUrl": null
     },
     {
-      "blogTitle": "Wilderness Medicine Training Center",
       "blogUrl": "https://www.wildmedcenter.com/blog",
       "feedUrl": "http://www.wildmedcenter.com/1/feed",
-      "category": "Adventure"
+      "category": "Education",
+      "blogTitle": "Wilderness Medicine Training Center",
+      "authorFullName": null,
+      "wikipediaUrl": null
     },
     {
-      "blogTitle": "Windsurfing Now",
-      "blogUrl": "https://www.windsurfingnowmag.com",
-      "feedUrl": "https://www.windsurfingnowmag.com/feed/",
-      "category": "Adventure"
-    },
-    {
-      "blogTitle": "With Every Mile",
       "blogUrl": "https://www.witheverymile.com/blog/",
       "feedUrl": "https://www.witheverymile.com/blog?format=RSS",
-      "category": "Adventure"
+      "category": "Running",
+      "blogTitle": "With Every Mile",
+      "authorFullName": null,
+      "wikipediaUrl": null
     },
     {
-      "blogTitle": "the new outrigger",
-      "blogUrl": "https://thenewoutrigger.com",
-      "feedUrl": "https://thenewoutrigger.com/feed/",
-      "category": "Adventure"
-    },
-    {
-      "blogTitle": "#CoopGardens",
-      "blogUrl": "https://coopgardens.com",
-      "feedUrl": "https://coopgardens.com/feed/",
-      "category": "Alternative"
-    },
-    {
-      "blogTitle": "Co-society",
       "blogUrl": "https://www.co-society.com",
       "feedUrl": "http://www.co-society.com/feed/",
-      "category": "Alternative"
+      "category": "Cooperation",
+      "blogTitle": "Co-society",
+      "authorFullName": null,
+      "wikipediaUrl": null
     },
     {
-      "blogTitle": "CrimethInc",
-      "blogUrl": "https://crimethinc.com/",
-      "feedUrl": "https://crimethinc.com/feed",
-      "category": "Alternative"
-    },
-    {
-      "blogTitle": "Dissent",
-      "blogUrl": "https://www.dissentmagazine.org",
-      "feedUrl": "https://www.dissentmagazine.org/feed",
-      "category": "Alternative"
-    },
-    {
-      "blogTitle": "Doc Searls Weblog",
-      "blogUrl": "http://blogs.harvard.edu/doc",
-      "feedUrl": "http://blogs.law.harvard.edu/doc/feed/",
-      "category": "Alternative"
-    },
-    {
-      "blogTitle": "EFF.org Updates",
       "blogUrl": "https://www.eff.org/rss/updates.xml",
       "feedUrl": "http://www.eff.org/rss/updates.xml",
-      "category": "Alternative"
+      "category": "Code",
+      "blogTitle": "EFF.org Updates",
+      "authorFullName": "Electronic Frontier Foundation",
+      "wikipediaUrl": null
     },
     {
-      "blogTitle": "Existential Comics",
-      "blogUrl": "https://existentialcomics.com",
-      "feedUrl": "http://existentialcomics.com/rss.xml",
-      "category": "Alternative"
-    },
-    {
-      "blogTitle": "Human Systems: What to Build",
-      "blogUrl": "https://medium.com/what-to-build?source=rss----637e56077212---4",
-      "feedUrl": "https://medium.com/feed/what-to-build",
-      "category": "Alternative"
-    },
-    {
-      "blogTitle": "IndieNews",
       "blogUrl": "https://news.indieweb.org/en",
       "feedUrl": "https://granary.io/url?input=html&output=atom&url=https%3A%2F%2Fnews.indieweb.org%2Fen",
-      "category": "Alternative"
+      "category": "Code",
+      "blogTitle": "IndieNews",
+      "authorFullName": null,
+      "wikipediaUrl": null
     },
     {
-      "blogTitle": "Kev Quirk",
-      "blogUrl": "https://kevquirk.com",
-      "feedUrl": "https://kevquirk.com/feed",
-      "category": "Alternative"
-    },
-    {
-      "blogTitle": "Kottke",
       "blogUrl": "http://kottke.org/",
       "feedUrl": "http://feeds.kottke.org/main",
-      "category": "Alternative"
+      "category": "Writing",
+      "blogTitle": "Kottke",
+      "authorFullName": "Jason Kottke",
+      "wikipediaUrl": null
     },
     {
-      "blogTitle": "Lloyd's Blog",
-      "blogUrl": "http://lloydkahn-ongoing.blogspot.com/",
-      "feedUrl": "http://feeds2.feedburner.com/lloydkahn",
-      "category": "Alternative"
-    },
-    {
-      "blogTitle": "Low-Tech Magazine",
       "blogUrl": "https://www.lowtechmagazine.com/",
       "feedUrl": "http://www.lowtechmagazine.com/rss.xml",
-      "category": "Alternative"
+      "category": "Cooperation",
+      "blogTitle": "Low-Tech Magazine",
+      "authorFullName": null,
+      "wikipediaUrl": null
     },
     {
-      "blogTitle": "Matter on Medium",
-      "blogUrl": "https://medium.com/matter?source=rss----bcc38c8f6edf---4",
-      "feedUrl": "https://medium.com/feed/matter",
-      "category": "Alternative"
-    },
-    {
-      "blogTitle": "Mutual Aid Disaster Relief",
       "blogUrl": "https://mutualaiddisasterrelief.org",
       "feedUrl": "https://mutualaiddisasterrelief.org/feed/",
-      "category": "Alternative"
+      "category": "Cooperation",
+      "blogTitle": "Mutual Aid Disaster Relief",
+      "authorFullName": null,
+      "wikipediaUrl": null
     },
     {
-      "blogTitle": "Of Two Minds",
       "blogUrl": "http://charleshughsmith.blogspot.com/",
       "feedUrl": "https://feeds2.feedburner.com/google/RzFQ",
-      "category": "Alternative"
+      "category": "Cooperation",
+      "blogTitle": "Of Two Minds",
+      "authorFullName": "Charles Hugh Smith",
+      "wikipediaUrl": null
     },
     {
-      "blogTitle": "P2PNetwork Co-op",
       "blogUrl": "https://blog.p2pfoundation.net",
       "feedUrl": "https://blog.p2pfoundation.net/category/channels-streams/open-coops-sustainable-livelihoods/feed",
-      "category": "Alternative"
+      "category": "Cooperation",
+      "blogTitle": "P2PNetwork Co-op",
+      "authorFullName": null,
+      "wikipediaUrl": null
     },
     {
-      "blogTitle": "ProPublica Feed",
       "blogUrl": "https://www.propublica.org/feeds/54Ghome",
       "feedUrl": "http://feeds.propublica.org/propublica/main",
-      "category": "Alternative"
+      "category": "News",
+      "blogTitle": "ProPublica Feed",
+      "authorFullName": null,
+      "wikipediaUrl": null
     },
     {
-      "blogTitle": "Renee Reizman",
       "blogUrl": "https://www.reneereizman.com",
       "feedUrl": "https://www.reneereizman.com/rss",
-      "category": "Alternative"
+      "category": "Writing",
+      "blogTitle": "Renee Reizman",
+      "authorFullName": "Renee Reizman",
+      "wikipediaUrl": null
     },
     {
-      "blogTitle": "Skipper Jenn",
       "blogUrl": "https://skipperjenn.com",
       "feedUrl": "https://skipperjenn.com/feed/",
-      "category": "Alternative"
+      "category": "Sailing",
+      "blogTitle": "Skipper Jenn",
+      "authorFullName": null,
+      "wikipediaUrl": null
     },
     {
-      "blogTitle": "Snake River Seed Cooperative",
       "blogUrl": "https://www.snakeriverseeds.com/blogs/news",
       "feedUrl": "https://www.snakeriverseeds.com/blogs/news.atom",
-      "category": "Alternative"
+      "category": "Gardening",
+      "blogTitle": "Snake River Seed Cooperative",
+      "authorFullName": null,
+      "wikipediaUrl": null
     },
     {
-      "blogTitle": "Soul Fire Farm",
       "blogUrl": "https://www.soulfirefarm.org",
       "feedUrl": "http://www.soulfirefarm.org/feed/",
-      "category": "Alternative"
-    },
-    {
-      "blogTitle": "THE LONG HAUL",
-      "blogUrl": "https://thelonghaul.org",
-      "feedUrl": "https://thelonghaul.org/feed",
-      "category": "Alternative"
-    },
-    {
-      "blogTitle": "The School of Life",
-      "blogUrl": "https://www.theschooloflife.com/",
-      "feedUrl": "https://www.theschooloflife.com/feed/",
-      "category": "Alternative"
-    },
-    {
-      "blogTitle": "Zen Habits",
-      "blogUrl": "https://zenhabits.net",
-      "feedUrl": "http://zenhabits.net/feed/",
-      "category": "Alternative"
-    },
-    {
-      "blogTitle": "nutcroft",
-      "blogUrl": "https://nutcroft.com",
-      "feedUrl": "https://nutcroft.com/rss/",
-      "category": "Alternative"
-    },
-    {
-      "blogTitle": "A Photo Editor",
-      "blogUrl": "https://aphotoeditor.com",
-      "feedUrl": "http://www.aphotoeditor.com/feed/",
-      "category": "Art"
+      "category": "Gardening",
+      "blogTitle": "Soul Fire Farm",
+      "authorFullName": null,
+      "wikipediaUrl": null
     },
     {
       "blogTitle": "Artist Trust Blog: I Am An Artist",
       "blogUrl": "http://artisttrust.blogspot.com/",
       "feedUrl": "http://artisttrust.blogspot.com/feeds/posts/default",
-      "category": "Art"
-    },
-    {
-      "blogTitle": "B",
-      "blogUrl": "http://blakeandrews.blogspot.com/",
-      "feedUrl": "http://blakeandrews.blogspot.com/feeds/posts/default",
-      "category": "Art"
-    },
-    {
-      "blogTitle": "Blog4Culture",
-      "blogUrl": "http://www.4culture.org",
-      "feedUrl": "http://blog.4culture.org/feed/",
       "category": "Art"
     },
     {
@@ -397,358 +237,94 @@
       "category": "Art"
     },
     {
-      "blogTitle": "I was born in 1977",
-      "blogUrl": "http://faythelevine.blogspot.com/",
-      "feedUrl": "http://faythelevine.blogspot.com/feeds/posts/default",
-      "category": "Art"
-    },
-    {
-      "blogTitle": "Julia Cameron",
-      "blogUrl": "https://juliacameronlive.com",
-      "feedUrl": "http://juliacameronlive.com/feed/",
-      "category": "Art"
-    },
-    {
-      "blogTitle": "Mike Fiechtner Photography",
-      "blogUrl": "https://www.mikefiechtner.com/blog/",
-      "feedUrl": "http://www.mikefiechtner.com/blog/atom.xml",
-      "category": "Art"
-    },
-    {
       "blogTitle": "Photo Center NW",
       "blogUrl": "https://pcnw.org",
       "feedUrl": "http://pcnw.org/feed/",
       "category": "Art"
     },
     {
-      "blogTitle": "Shapes and Spaces - The Sketchbook of Kurt D. Hollomon",
-      "blogUrl": "https://kurtdhollomon.wordpress.com",
-      "feedUrl": "https://kurtdhollomon.wordpress.com/feed/",
-      "category": "Art"
-    },
-    {
-      "blogTitle": "Strobist",
-      "blogUrl": "http://strobist.blogspot.com/",
-      "feedUrl": "http://feeds.feedburner.com/blogspot/WOBq",
-      "category": "Art"
-    },
-    {
-      "blogTitle": "Vantage on Medium",
-      "blogUrl": "https://medium.com/vantage?source=rss----d8f3f6ad9c31---4",
-      "feedUrl": "https://medium.com/feed/vantage",
-      "category": "Art"
-    },
-    {
-      "blogTitle": "andreiabickenbach tumblr",
-      "blogUrl": "https://andreiabickenbach.tumblr.com/",
-      "feedUrl": "http://andreiabickenbach.tumblr.com/rss",
-      "category": "Art"
-    },
-    {
-      "blogTitle": "photo-eye | BLOG",
-      "blogUrl": "https://blog.photoeye.com/",
-      "feedUrl": "http://blog.photoeye.com/feeds/posts/default",
-      "category": "Art"
-    },
-    {
-      "blogTitle": "A Secret History of American River People",
-      "blogUrl": "https://peoplesriverhistory.us",
-      "feedUrl": "https://peoplesriverhistory.us/feed/",
-      "category": "Boats"
-    },
-    {
-      "blogTitle": "Narrow boat artur",
-      "blogUrl": "https://arturpaikin.com/en/blog/",
-      "feedUrl": "https://arturpaikin.com/en/blog-feed.xml",
-      "category": "Boats"
-    },
-    {
       "blogTitle": "Agaric Cooperative",
       "blogUrl": "https://agaric.coop/",
       "feedUrl": "https://agaric.coop/blog/feed",
-      "category": "Business"
-    },
-    {
-      "blogTitle": "Ana Andjelic Sociology of Business",
-      "blogUrl": "https://andjelicaaa.substack.com",
-      "feedUrl": "https://andjelicaaa.substack.com/feed/",
-      "category": "Business"
-    },
-    {
-      "blogTitle": "CPA for Freelancers",
-      "blogUrl": "https://www.cpaforfreelancers.com",
-      "feedUrl": "https://www.cpaforfreelancers.com/blog/feed/",
-      "category": "Business"
-    },
-    {
-      "blogTitle": "Dripline",
-      "blogUrl": "https://hypha.coop/",
-      "feedUrl": "https://hypha.coop/feed.xml",
-      "category": "Business"
-    },
-    {
-      "blogTitle": "Frances Berriman",
-      "blogUrl": "https://fberriman.com/",
-      "feedUrl": "https://fberriman.com/feed/",
-      "category": "Business"
-    },
-    {
-      "blogTitle": "John O'Nolan",
-      "blogUrl": "https://john.onolan.org/",
-      "feedUrl": "https://john.onolan.org/rss/",
-      "category": "Business"
+      "category": "Cooperation"
     },
     {
       "blogTitle": "Nathan Schneider",
       "blogUrl": "https://nathanschneider.info",
       "feedUrl": "https://nathanschneider.info/feed/",
-      "category": "Business"
+      "category": "Cooperation"
     },
     {
       "blogTitle": "Open Collective Blog",
       "blogUrl": "https://blog.opencollective.com/",
       "feedUrl": "https://blog.opencollective.com/rss/",
-      "category": "Business"
-    },
-    {
-      "blogTitle": "PIE Incubator",
-      "blogUrl": "https://medium.com/portland-incubator-experiment?source=rss----ed9c9087aa8b---4",
-      "feedUrl": "https://medium.com/feed/portland-incubator-experiment",
-      "category": "Business"
+      "category": "Cooperation"
     },
     {
       "blogTitle": "geo.coop",
       "blogUrl": "https://geo.coop/",
       "feedUrl": "https://geo.coop/rss.xml",
-      "category": "Business"
-    },
-    {
-      "blogTitle": "ClementineMorrigan.com",
-      "blogUrl": "https://www.clementinemorrigan.com",
-      "feedUrl": "https://www.clementinemorrigan.com/feed",
-      "category": "Culture"
+      "category": "Cooperation"
     },
     {
       "blogTitle": "Eighth generation",
       "blogUrl": "https://eighthgeneration.com/blogs/blog",
       "feedUrl": "http://eighthgeneration.com/blogs/blog.atom",
-      "category": "Culture"
-    },
-    {
-      "blogTitle": "Fight for the Future",
-      "blogUrl": "https://www.fightforthefuture.org",
-      "feedUrl": "https://www.fightforthefuture.org/news/feed.xml",
-      "category": "Culture"
+      "category": "Cooperation"
     },
     {
       "blogTitle": "Meditations in an Emergency",
       "blogUrl": "https://www.meditationsinanemergency.com/",
       "feedUrl": "https://www.meditationsinanemergency.com/rss/",
-      "category": "Culture"
-    },
-    {
-      "blogTitle": "Model View Culture",
-      "blogUrl": "https://modelviewculture.com",
-      "feedUrl": "https://modelviewculture.com/feed",
-      "category": "Culture"
+      "category": "Writing"
     },
     {
       "blogTitle": "Molly White",
       "blogUrl": "https://newsletter.mollywhite.net",
       "feedUrl": "https://newsletter.mollywhite.net/feed",
-      "category": "Culture"
+      "category": "Writing"
     },
     {
       "blogTitle": "Never Post",
       "blogUrl": "http://neverpo.st",
       "feedUrl": "https://feeds.transistor.fm/never-post",
-      "category": "Culture"
+      "category": "News"
     },
     {
       "blogTitle": "The Rhizome Blog RSS",
       "blogUrl": "https://rhizome.org/feeds/frontpage/",
       "feedUrl": "https://feeds.feedburner.com/TheRhizomeBlogRss",
-      "category": "Culture"
-    },
-    {
-      "blogTitle": "A List Apart",
-      "blogUrl": "https://alistapart.com",
-      "feedUrl": "http://feeds.feedburner.com/alistapart/main",
-      "category": "Dev"
-    },
-    {
-      "blogTitle": "Adam Flater - Flex Blog",
-      "blogUrl": "http://adamflater.blogspot.com/",
-      "feedUrl": "http://adamflater.blogspot.com/feeds/posts/default",
-      "category": "Dev"
-    },
-    {
-      "blogTitle": "April's nonsense",
-      "blogUrl": "https://april.dev/",
-      "feedUrl": "https://april.dev/feed.xml",
-      "category": "Dev"
+      "category": "Art"
     },
     {
       "blogTitle": "Ben Werdmuller",
       "blogUrl": "https://werd.io/",
       "feedUrl": "https://werd.io/?_t=rss",
-      "category": "Dev"
-    },
-    {
-      "blogTitle": "Boris Mann's Homepage - Blog Feed",
-      "blogUrl": "https://bmannconsulting.com",
-      "feedUrl": "https://bmannconsulting.com/blog.xml",
-      "category": "Dev"
-    },
-    {
-      "blogTitle": "Freelancer's Union",
-      "blogUrl": "https://blog.freelancersunion.org/",
-      "feedUrl": "https://blog.freelancersunion.org/rss/",
-      "category": "Dev"
-    },
-    {
-      "blogTitle": "Game Design Aspect of the Month",
-      "blogUrl": "http://gamedesignaspect.blogspot.com/",
-      "feedUrl": "http://gamedesignaspect.blogspot.com/feeds/posts/default",
-      "category": "Dev"
-    },
-    {
-      "blogTitle": "Godot Engine Official",
-      "blogUrl": "https://godotengine.org/rss.xml",
-      "feedUrl": "https://godotengine.org/rss.xml",
-      "category": "Dev"
-    },
-    {
-      "blogTitle": "Koldfront",
-      "blogUrl": "https://koldfront.dk/",
-      "feedUrl": "https://koldfront.dk/log.rss",
-      "category": "Dev"
-    },
-    {
-      "blogTitle": "Marc Littlemore",
-      "blogUrl": "https://www.marclittlemore.com",
-      "feedUrl": "https://www.marclittlemore.com/feed.xml",
-      "category": "Dev"
-    },
-    {
-      "blogTitle": "Martin Fowler",
-      "blogUrl": "https://martinfowler.com",
-      "feedUrl": "https://martinfowler.com/feed.atom",
-      "category": "Dev"
+      "category": "Writing"
     },
     {
       "blogTitle": "Meyer",
       "blogUrl": "https://meyerweb.com/eric/thoughts",
       "feedUrl": "http://meyerweb.com/index.php?feed=rss2&scope=full",
-      "category": "Dev"
-    },
-    {
-      "blogTitle": "Nx Devtools - Medium",
-      "blogUrl": "https://blog.nrwl.io?source=rss----1e21061103c7---4",
-      "feedUrl": "https://blog.nrwl.io/feed",
-      "category": "Dev"
+      "category": "Code"
     },
     {
       "blogTitle": "Simon Willison",
       "blogUrl": "http://simonwillison.net/",
       "feedUrl": "https://simonwillison.net/atom/everything/",
-      "category": "Dev"
-    },
-    {
-      "blogTitle": "SmartHomeBeginner",
-      "blogUrl": "https://www.smarthomebeginner.com",
-      "feedUrl": "https://feeds.feedburner.com/smarthomebeginr",
-      "category": "Dev"
-    },
-    {
-      "blogTitle": "Smashing Magazine Feed",
-      "blogUrl": "https://www.smashingmagazine.com/",
-      "feedUrl": "http://rss1.smashingmagazine.com/feed/",
-      "category": "Dev"
-    },
-    {
-      "blogTitle": "TechHut Media",
-      "blogUrl": "https://techhut.tv",
-      "feedUrl": "https://techhut.tv/feed/",
-      "category": "Dev"
-    },
-    {
-      "blogTitle": "V8",
-      "blogUrl": "https://v8.dev/",
-      "feedUrl": "https://v8.dev/blog.atom",
-      "category": "Dev"
-    },
-    {
-      "blogTitle": "compudanzas",
-      "blogUrl": "https://compudanzas.net/log.html",
-      "feedUrl": "https://compudanzas.net/atom.xml",
-      "category": "Dev"
+      "category": "Code"
     },
     {
       "blogTitle": "computers are bad",
       "blogUrl": "https://computer.rip",
       "feedUrl": "https://computer.rip/rss.xml",
-      "category": "Dev"
-    },
-    {
-      "blogTitle": "davepeck.org",
-      "blogUrl": "https://davepeck.org/",
-      "feedUrl": "http://davepeck.org/feed/",
-      "category": "Dev"
-    },
-    {
-      "blogTitle": "gRegorLove",
-      "blogUrl": "https://gregorlove.com",
-      "feedUrl": "https://gregorlove.com/articles.atom",
-      "category": "Dev"
-    },
-    {
-      "blogTitle": "headllines/hackernews-weekly Issues",
-      "blogUrl": "https://github.com/headllines/hackernews-weekly/issues",
-      "feedUrl": "https://github.com/headllines/hackernews-weekly/issues.atom",
-      "category": "Dev"
-    },
-    {
-      "blogTitle": "Archive for Borderlands 3 SHiFT Codes",
-      "blogUrl": "https://shift.orcicorn.com/tags/borderlands3/",
-      "feedUrl": "https://shift.orcicorn.com/tags/borderlands3/index.xml",
-      "category": "Gaming"
-    },
-    {
-      "blogTitle": "Cliff Mass Weather Blog",
-      "blogUrl": "https://cliffmass.blogspot.com/",
-      "feedUrl": "https://cliffmass.blogspot.com/feeds/posts/default?alt=rss",
-      "category": "Local"
-    },
-    {
-      "blogTitle": "DJ TechTools",
-      "blogUrl": "https://s11234.pcdn.co",
-      "feedUrl": "http://feeds.feedburner.com/djtechtools",
-      "category": "Music"
-    },
-    {
-      "blogTitle": "Aeon",
-      "blogUrl": "https://aeon.co/",
-      "feedUrl": "https://aeon.co/feed.rss",
-      "category": "News"
-    },
-    {
-      "blogTitle": "All Hail the Black Market",
-      "blogUrl": "https://allhailtheblackmarket.com",
-      "feedUrl": "https://allhailtheblackmarket.com/feed/",
-      "category": "Riding"
-    },
-    {
-      "blogTitle": "External | Canada Coop",
-      "blogUrl": "https://canada.coop/en/",
-      "feedUrl": "https://canada.coop/en/?feed=job_feed&job_types=external&search_location&job_categories&search_keywords",
-      "category": "Uncategorized"
+      "category": "Code"
     },
     {
       "blogTitle": "Seattle REconomy",
       "blogUrl": "https://seattlereconomy.org",
       "feedUrl": "https://seattlereconomy.org/feed/",
-      "category": "Uncategorized"
+      "category": "Cooperation"
     }
   ]
 }

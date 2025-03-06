@@ -13,7 +13,7 @@ Download the OPML for use in your reader app: [OPML XML File](/blogs.opml.xml)
 
 {% for blog in collections.blogroll | sort(false, false, 'blogTitle') %}
 {% if blog.category == category %}
-- [{{ blog.blogTitle }}]({{ blog.blogUrl }})
+- [{{ blog.blogTitle }}]({{ blog.blogUrl }}) [RSS]({{ blog.feedUrl }})
 {% endif %}
 {% endfor %}
 
