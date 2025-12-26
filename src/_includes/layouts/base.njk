@@ -14,6 +14,8 @@
     />
 
     {% seo "" %}
+    
+    {% block head %}{% endblock %}
   </head>
   <body>
   <main>
@@ -22,25 +24,27 @@
   
     {{ content | safe }}
 
-      <footer class="footer">
-        <div class="links">
-          <a href="/">Home</a>
-          <span class="divider">|</span>
-          <a href="/posts">Posts</a>
-          <span class="divider">|</span>
-          <a href="/about">About</a>
-          <span class="divider">|</span>
-          <a href="/mapping">Mapping</a>
-          <span class="divider">|</span>
-          <a href="/snackcountry">Snackcountry</a>
-          <span class="divider">|</span>
-          <a href="/feeds">Feeds</a>
-          <span class="divider">|</span>
-          <a href="/slashes">Slashes</a>
-        </div>
-      </footer>
+    <footer class="footer">
+      <div class="links">
+        <a href="/">Home</a>
+        <span class="divider">|</span>
+        <a href="/posts">Posts</a>
+        <span class="divider">|</span>
+        <a href="/about">About</a>
+        <span class="divider">|</span>
+        <a href="/mapping">Mapping</a>
+        <span class="divider">|</span>
+        <a href="/snackcountry">Snackcountry</a>
+        <span class="divider">|</span>
+        <a href="/feeds">Feeds</a>
+        <span class="divider">|</span>
+        <a href="/slashes">Slashes</a>
+      </div>
+    </footer>
     
   </main>
+  
+  {% block scripts %}{% endblock %}
    
   </body>
 </html>

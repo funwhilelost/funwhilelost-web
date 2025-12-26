@@ -1,0 +1,26 @@
+---
+permalink: /public/trailheads.geojson
+eleventyExcludeFromCollections: true
+---
+{
+  "type": "FeatureCollection",
+  "features": [
+    {%- for trailhead in trailheads.trailheads -%}
+    {%- if loop.index0 > 0 -%},{%- endif %}
+    {
+      "type": "Feature",
+      "properties": {
+        "id": {{ trailhead.id }},
+        "name": {{ trailhead.name | dump | safe }}
+      },
+      "geometry": {
+        "coordinates": [
+          {{ trailhead.lon }},
+          {{ trailhead.lat }}
+        ],
+        "type": "Point"
+      }
+    }
+    {%- endfor -%}
+  ]
+}

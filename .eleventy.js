@@ -26,6 +26,8 @@ module.exports = function(eleventyConfig) {
   ]);
   eleventyConfig.addPassthroughCopy("public");
 
+  eleventyConfig.addDataExtension("geojson", (contents) => JSON.parse(contents));
+
   // our plugins
   eleventyConfig.addPlugin(pluginFeed);
 

@@ -1,10 +1,12 @@
 ---
-layout: layouts/page.njk
+layout: layouts/mapping.njk
 ---
 
 # Mapping
 
 I love working with maps and frequently contribute to [OpenStreetMap](https://www.openstreetmap.org/user/funwhilelost/).
+
+<div id="map"></div>
 
 - [How To](/mapping/howto)
 

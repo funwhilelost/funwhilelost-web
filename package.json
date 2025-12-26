@@ -22,6 +22,7 @@
   "devDependencies": {
     "@11ty/eleventy": "^3",
     "@11ty/eleventy-plugin-rss": "^2.0.2",
+    "dotenv": "^17.2.3",
     "lodash.escape": "^4.0.1"
   },
   "dependencies": {
