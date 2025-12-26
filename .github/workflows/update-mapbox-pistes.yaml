@@ -1,0 +1,111 @@
+name: Update Mapbox Pistes Tileset
+
+on:
+  workflow_dispatch:
+
+jobs:
+  update-tileset:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      # Should be available on base image...
+      # - name: Install jq
+      #   run: sudo apt-get update && sudo apt-get install -y jq
+      
+      - name: Install query-overpass globally
+        run: npm install -g query-overpass
+      
+      - name: Install mapbox-tilesets
+        run: pip3 install mapbox-tilesets
+      
+      - name: Query Overpass API for PNW pistes
+        run: |
+          MAX_RETRIES=5
+          RETRY_COUNT=0
+          SUCCESS=false
+          
+          while [ $RETRY_COUNT -lt $MAX_RETRIES ] && [ "$SUCCESS" = false ]; do
+            echo "Attempt $((RETRY_COUNT + 1)) of $MAX_RETRIES..."
+            
+            if echo '[out:json][timeout:60];
+            // gather results
+            (  
+              // query part for: "piste:type=nordic"  
+              way["piste:type"="nordic"](43.213183300738876,-125.37597656250001,49.56797785892715,-113.51074218750001);  
+              relation["piste:type"="nordic"](43.213183300738876,-125.37597656250001,49.56797785892715,-113.51074218750001);
+              // query part for: "piste:type=hike"  
+              way["piste:type"="hike"](43.213183300738876,-125.37597656250001,49.56797785892715,-113.51074218750001);  
+              relation["piste:type"="hike"](43.213183300738876,-125.37597656250001,49.56797785892715,-113.51074218750001);
+            );
+            // print results
+            out body;
+            >;
+            out skel qt;' | query-overpass --flat-properties > pnw-pistes.geojson; then
+              SUCCESS=true
+              echo "Successfully retrieved data from Overpass API"
+            else
+              RETRY_COUNT=$((RETRY_COUNT + 1))
+              if [ $RETRY_COUNT -lt $MAX_RETRIES ]; then
+                echo "Query failed, waiting 10 seconds before retry..."
+                sleep 10
+              else
+                echo "All retry attempts exhausted"
+                exit 1
+              fi
+            fi
+          done
+      
+      - name: Convert GeoJSON for Mapbox
+        run: |
+          cat pnw-pistes.geojson | jq -c ".features[]" > nld_features.json
+      
+      - name: Create tileset recipe
+        run: |
+          cat > pistes_tile_recipe.json << 'EOF'
+          {
+            "version": 1,
+            "layers": {
+              "ski_trails": {
+                "source": "mapbox://tileset-source/flyingtrolleycars/osm_pistes_pnw",
+                "minzoom" : 0,
+                "maxzoom" : 11,
+                "features" : {
+                   "attributes" : {
+                     "allowed_output" : [
+                       "name",
+                       "piste:difficulty",
+                       "piste:name",
+                       "trail_visibility",
+                       "piste:grooming",
+                       "piste:type",
+                       "piste:status"
+                    ],
+                    "set": {
+                      "description": [ "coalesce", [ "get", "description" ], "ski trail"]
+                    }
+                  }
+                }
+              }
+            }
+          }
+          EOF
+      
+      - name: Upload to Mapbox tileset source
+        env:
+          MAPBOX_ACCESS_TOKEN: ${{ secrets.MAPBOX_WRITE_TOKEN }}
+        run: |
+          tilesets upload-source --replace flyingtrolleycars osm_pistes_pnw pnw-pistes.geojson
+      
+      - name: Publish Mapbox tileset
+        env:
+          MAPBOX_ACCESS_TOKEN: ${{ secrets.MAPBOX_WRITE_TOKEN }}
+        run: |
+          tilesets publish flyingtrolleycars.osm_pistes_pnw
