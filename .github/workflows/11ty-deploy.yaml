@@ -15,10 +15,20 @@ jobs:
           node-version: 22.x
 
       - name: Install dependencies
-        run: npm install
+        run: yarn install --frozen-lockfile
+
+      - name: Check GRIST_API_KEY
+        run: |
+          if [ -z "${{ secrets.GRIST_API_KEY }}" ]; then
+            echo "GRIST_API_KEY is not set. Failing the pipeline."
+            exit 1
+          fi
+
       - name: Build
-        run: npm run build
+        run: yarn build
         env:
+          GRIST_API_KEY: ${{ secrets.GRIST_API_KEY }}
+          MAPBOX_API_KEY: ${{ secrets.MAPBOX_API_KEY }}
           NODE_ENV: "production"
 
       # - name: Deploy to Dreamhost
