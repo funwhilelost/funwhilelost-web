@@ -66,7 +66,7 @@ jobs:
       - name: Convert GeoJSON for Mapbox
         run: |
           cat pnw-pistes.geojson | jq -c ".features[]" > nld_features.json
-      
+
       - name: Create tileset recipe
         run: |
           cat > pistes_tile_recipe.json << 'EOF'
@@ -75,21 +75,95 @@ jobs:
             "layers": {
               "ski_trails": {
                 "source": "mapbox://tileset-source/flyingtrolleycars/osm_pistes_pnw",
-                "minzoom" : 0,
-                "maxzoom" : 11,
-                "features" : {
-                   "attributes" : {
-                     "allowed_output" : [
-                       "name",
-                       "piste:difficulty",
-                       "piste:name",
-                       "trail_visibility",
-                       "piste:grooming",
-                       "piste:type",
-                       "piste:status"
+                "minzoom": 0,
+                "maxzoom": 11,
+                "features": {
+                  "attributes": {
+                    "allowed_output": [
+                      "name",
+                      "piste:difficulty",
+                      "piste:name",
+                      "trail_visibility",
+                      "piste:grooming",
+                      "piste:type",
+                      "piste:status"
                     ],
                     "set": {
-                      "description": [ "coalesce", [ "get", "description" ], "ski trail"]
+                      "description": ["coalesce", ["get", "description"], "ski trail"]
+                    }
+                  }
+                }
+              },
+              "nordic_backcountry_trails": {
+                "source": "mapbox://tileset-source/flyingtrolleycars/osm_pistes_pnw",
+                "minzoom": 0,
+                "maxzoom": 11,
+                "features": {
+                  "filter": [
+                    "all",
+                    ["==", ["get", "piste:type"], "nordic"],
+                    ["==", ["get", "piste:grooming"], "backcountry"]
+                  ],
+                  "attributes": {
+                    "allowed_output": [
+                      "name",
+                      "piste:difficulty",
+                      "piste:name",
+                      "trail_visibility",
+                      "piste:grooming",
+                      "piste:type",
+                      "piste:status"
+                    ],
+                    "set": {
+                      "description": ["coalesce", ["get", "description"], "backcountry nordic trail"]
+                    }
+                  }
+                }
+              },
+              "nordic_groomed_trails": {
+                "source": "mapbox://tileset-source/flyingtrolleycars/osm_pistes_pnw",
+                "minzoom": 0,
+                "maxzoom": 11,
+                "features": {
+                  "filter": [
+                    "all",
+                    ["==", ["get", "piste:type"], "nordic"],
+                    ["!=", ["get", "piste:grooming"], "backcountry"]
+                  ],
+                  "attributes": {
+                    "allowed_output": [
+                      "name",
+                      "piste:difficulty",
+                      "piste:name",
+                      "trail_visibility",
+                      "piste:grooming",
+                      "piste:type",
+                      "piste:status"
+                    ],
+                    "set": {
+                      "description": ["coalesce", ["get", "description"], "groomed nordic trail"]
+                    }
+                  }
+                }
+              },
+              "snowshoe_trails": {
+                "source": "mapbox://tileset-source/flyingtrolleycars/osm_pistes_pnw",
+                "minzoom": 0,
+                "maxzoom": 11,
+                "features": {
+                  "filter": ["==", ["get", "piste:type"], "hike"],
+                  "attributes": {
+                    "allowed_output": [
+                      "name",
+                      "piste:difficulty",
+                      "piste:name",
+                      "trail_visibility",
+                      "piste:grooming",
+                      "piste:type",
+                      "piste:status"
+                    ],
+                    "set": {
+                      "description": ["coalesce", ["get", "description"], "snowshoe trail"]
                     }
                   }
                 }
