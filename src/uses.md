@@ -24,6 +24,8 @@ These are bits of technology I use.  Inspired by [uses.tech](https://uses.tech/)
 - Klack (Mechanical keyboard sounds)
 - Kap (Screen capture written in Tauri)
 - Cascable (Canon camera as webcam)
+- sanesidebuttons (for mouse side buttons in MacOS)
+- Plexamp (self-hosted music player)
 
 ### Self Hosted
 
