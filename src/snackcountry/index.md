@@ -24,6 +24,11 @@ Groomed trails can be fun and sporty but I'm maximizing on "smiles per mile".  P
 - [GaiaGPS](https://gaiagps.com) - "Winter" layer has improved a lot lately, get the subscription in a bundle with Outside+ and you'll get the magazine and Trailforks all at once
 - [onX Backcountry](https://webmap.onxmaps.com/backcountry/map)
 
+## Weather
+
+- [Recent Snotel Accumulation](https://snow.outsidedb.com/)
+- [Kongsberger Cabin Creek Weather](https://www.kongsbergers.org/WeatherMotes)
+
 ## Inland Northwest Snackcountry
 
 - Moscow Mountain - MAMBA maintains some trails at the top of the mountain with a snowdog, Tamarack trailhead outside of Troy
