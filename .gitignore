@@ -1,6 +1,7 @@
 _site
 build
 .DS_Store
+docs/
 
 # Logs
 logs
