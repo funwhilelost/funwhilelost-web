@@ -1,0 +1,65 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-folk
+---
+
+{# Template for folk music pieces: renders ABC notation as sheet music,
+   plays it with Web Audio via abcjs, shows a playback cursor, and can
+   loop a chosen range of bars. Clicking the sheet music seeks to that
+   bar; double-clicking loops 8 bars from it. Front matter 'abc' holds
+   the ABC source. #}
+
+{% block head %}
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/abcjs@6.5.2/abcjs-audio.css" />
+{% endblock %}
+
+<div class="wrapper folk">
+  <div class="content">
+    <h1 class="postTitle">{{ title }}</h1>
+    {% if description %}<p class="folk-description">{{ description }}</p>{% endif %}
+    {% if origin %}<p class="folk-origin"><strong>Origin:</strong> {{ origin }}</p>{% endif %}
+
+    <div class="folk-player">
+      <div id="folk-audio" class="folk-audio"></div>
+      <div class="folk-loop">
+        <label><input type="checkbox" id="folk-loop-toggle" /> Loop bars</label>
+        <label>from <input type="number" id="folk-loop-start" min="1" value="1" /></label>
+        <label>to <input type="number" id="folk-loop-end" min="1" value="4" /></label>
+        <small>
+          Bar numbers count measures in playback order, including repeats.
+          Click the sheet music to play from that bar; double-click to loop
+          8 bars from it.
+        </small>
+      </div>
+      <div id="folk-paper" class="folk-paper"></div>
+      <details class="folk-abc">
+        <summary>ABC notation source</summary>
+        <pre id="folk-abc">{{ abc }}</pre>
+      </details>
+    </div>
+
+    <div class="folk-commentary">
+      {{ content | safe }}
+    </div>
+
+    <div class="controls">
+    {% if prevFolk.url %}
+      <p>
+        <strong>Previous piece</strong>:
+        <a class="previous" href="{{ prevFolk.url }}">{{ prevFolk.data.title }}</a>
+      </p>
+    {% endif %}
+    {% if nextFolk.url %}
+      <p>
+        <strong>Next piece</strong>:
+        <a class="next" href="{{ nextFolk.url }}">{{ nextFolk.data.title }}</a>
+      </p>
+    {% endif %}
+    </div>
+  </div>
+</div>
+
+{% block scripts %}
+  <script src="https://cdn.jsdelivr.net/npm/abcjs@6.5.2/dist/abcjs-basic-min.js"></script>
+  <script src="/public/folk.js" defer></script>
+{% endblock %}

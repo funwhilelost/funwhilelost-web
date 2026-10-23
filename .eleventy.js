@@ -80,6 +80,26 @@ module.exports = function(eleventyConfig) {
     return blogroll.blogs;
   });
 
+  /* Build the collection of folk music pieces
+     - Pieces are markdown files in src/folk that list 'folk' in the front matter 'tags'
+     - The ABC notation source for each piece lives in the front matter 'abc' property
+  */
+  eleventyConfig.addCollection("folk", function(collection) {
+    const coll = collection
+      .getFilteredByTag("folk");
+
+    // Adds {{ prevFolk.url }} {{ prevFolk.data.title }}, etc, to our njks templates
+    for (let i = 0; i < coll.length; i++) {
+      const prevFolk = coll[i - 1];
+      const nextFolk = coll[i + 1];
+
+      coll[i].data["prevFolk"] = prevFolk;
+      coll[i].data["nextFolk"] = nextFolk;
+    }
+
+    return coll;
+  });
+
   return {
     dir: {
       input: "src",
