@@ -1,0 +1,17 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-folk
+---
+
+{# This is the template for the Folk index page–it lists the pieces in the folk collection #}
+
+<div class="wrapper home">
+  <div class="content">
+    {{ content | safe }}
+    <ul>
+      {%- for piece in collections.folk -%}
+        <li{% if page.url == piece.url %} aria-current="page"{% endif %}><a href='{{ piece.url }}'>{{ piece.data.title }}</a>{% if piece.data.origin %} — {{ piece.data.origin }}{% endif %}</li>
+      {%- endfor -%}
+    </ul>
+  </div>
+</div>

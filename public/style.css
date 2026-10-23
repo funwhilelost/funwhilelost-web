@@ -202,3 +202,57 @@ a:hover {
   height: 600px;
   margin: 2rem 0;
 }
+
+/* Folk music pieces */
+.folk {
+  place-items: normal;
+}
+.folk-player {
+  margin: 1rem 0 2rem;
+}
+.folk-paper {
+  background: #fff;
+  padding: 1rem;
+  overflow-x: auto;
+}
+.folk-audio {
+  margin-bottom: 0.5rem;
+}
+.folk-loop {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 0.75rem 0;
+  font-size: 0.95rem;
+}
+.folk-loop small {
+  flex-basis: 100%;
+}
+.folk-loop input[type="number"] {
+  width: 4rem;
+  margin-left: 0.25rem;
+  font-size: 1rem;
+}
+.folk-cursor {
+  stroke: #d94f04;
+  stroke-width: 2;
+}
+.folk-highlight {
+  fill: #d94f04;
+}
+.folk-abc {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+.folk-abc pre {
+  background: #fff;
+  padding: 1rem;
+  overflow-x: auto;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+.folk-origin,
+.folk-description {
+  margin-bottom: 0.5rem;
+}
